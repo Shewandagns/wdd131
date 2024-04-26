@@ -37,6 +37,7 @@ h2 {
 	font-family: sans-serif;
 	text-align: center;
 	font-size: 29px;
+	color: white;
 	background-color: rgb(36, 76, 109);
 }
 
@@ -155,8 +156,8 @@ h3 {
 	grid-column: 3 / 4;
 }
 
-.right, ul, li {
-	margin-right: 5px;
+.web-dev-resourse {
+	padding: 2rem;
 }
 
 footer {
