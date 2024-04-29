@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Roboto+Slab&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 * {
     margin: 0;
 	padding: 0;
@@ -8,7 +10,7 @@
 
 body {
 	height: 95vh;
-	font-family: 'Newsreader';
+	font-family: "Merriweather", serif;
 	text-align: center;
 	color: #eee;
 	font-size: 24px;
@@ -30,13 +32,13 @@ header {
 }
 
 h1 {
-	font-family: 'Newsreader';
+	font-family: "Merriweather", serif;
 	text-align: center;
 	font-size: 29px;
 }
 
 h2 {
-	font-family: 'Newsreader';
+	font-family: "Merriweather", serif;
 	text-align: center;
 	font-size: 29px;
 	color: white;
@@ -120,7 +122,7 @@ main p {
 }
 
 h3 {
-	font-family: 'Newsreader';
+	font-family: "Merriweather", serif;
 	font-size: 20px;
 	border-bottom: 2px solid steelblue;
 	padding-left: 19px;
