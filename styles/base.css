@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Roboto+Slab&display=swap');
 
-@font-face {
-    font-family: 'Newsreader';
-    font-style: italic;
-    font-weight: 200;
-    font-display: swap;
-	src: url(https://fonts.gstatic.com/s/newsreader/v20/cY9kfjOCX1hbuyalUrK439vogqC9yFZCYg7oRdaKP4obnf7fTXglsMyoT-ZA.ttf) format('truetype');
-}
-
 * {
     margin: 0;
 	padding: 0;
