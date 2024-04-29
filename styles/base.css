@@ -141,6 +141,11 @@ h3 {
 	margin: 0 0 1rem 1rem;
 }
 
+figure {
+	text-align: center;
+	grid-column: 1 / 2;
+}
+
 .right {
 	background-color: white;
 	text-align: left;
