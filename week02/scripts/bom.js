@@ -4,24 +4,25 @@ document.addEventListener('DOMContentLoaded', function () {
     const list = document.querySelector('#list');
 
     button.addEventListener('click', function () {
-        const inputValue = input.value.trim();
-
-        if (inputValue !== '') {
+        if (input.value.trim() !== '') {
             const li = document.createElement('li');
-            li.textContent = inputValue;
-
             const deleteButton = document.createElement('button');
+
+            li.textContent = input.value;
             deleteButton.textContent = '❌';
             deleteButton.classList.add('delete');
-
-            deleteButton.addEventListener('click', function () {
-                list.removeChild(li);
-            });
 
             li.appendChild(deleteButton);
             list.appendChild(li);
 
-            input.value = '';
+            input.value = ''; // Clear input field after adding the chapter
+        }
+    });
+
+    list.addEventListener('click', function (event) {
+        if (event.target.classList.contains('delete')) {
+            const li = event.target.parentElement;
+            list.removeChild(li);
         }
     });
 });
