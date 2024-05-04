@@ -18,82 +18,67 @@ footer {
     max-width: 1320px;
 }
 
+header {
+    background-color: rgb(53, 3, 101);;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
 h1 {
     font-size: 2rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
 }
 
-/*off-screen menu*/
-.off-screen-menu {
-    background-color:  rgb(34, 37, 49);
-    height: 450px;
-    width: 100%;
-    max-width: 200px;
-    position: fixed;
-    top: 0;
-    right: -450px;
+.navigation {
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.navigation a {
+    display: none;
+    padding: 0.75rem;
+    text-decoration: none;
     text-align: center;
-    font-size: 3rem;
-    transition: .3s ease;
+    color: white;
 }
 
-.off-screen-menu.active {
-    right: 0;
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
 }
 
-nav {
-    padding: 1rem;
-    display: flex;
-    /* background-color: rgb(34, 37, 49);*/
+.wrap {
+    flex-wrap: wrap;
 }
 
-/*Ham Menu*/
-.ham-menu {
-    height: 50px;
-    width: 40px;
-    margin-left: auto;
-    position: relative;
-}
-
-.ham-menu span {
-    height: 5px;
-    width: 100%;
-    background-color: #6F86FF;
-    border-radius: 25px;
+#ham-menu {
+    font-size: 1.5rem;
+    border:0;
+    background: none;
+    color: white;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease;
+    top: 1rem;
+    right: 1rem;
+    content: "☰";
 }
 
-.ham-menu span:nth-child(1) {
-    top: 25%;
+#ham-menu::before {
+    content: "☰";
 }
 
-.ham-menu span:nth-child(3) {
-    top: 75%;
+#ham-menu.open::before {
+    content: "❎";
 }
 
-.ham-menu.active span {
-    background-color: white;
-}
-
-.ham-menu.active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.ham-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.ham-menu.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+.open a {
+    display: block;
 }
 
 /*Temple pictures*/
@@ -108,7 +93,7 @@ h2 {
     font-size: 1rem;
 }
 
-section, .temple-gallery {
+.temple-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     column-gap: 70px;
@@ -141,15 +126,4 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-/* CSS for mobile view */
-@media screen and (max-width: 640px) {
-    nav {
-        display: none; /* Hide the normal navigation bar */
-    }
-
-    .ham-menu {
-        display: block; /* Display the hamburger menu */
-    }
 }
