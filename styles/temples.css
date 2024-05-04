@@ -108,11 +108,11 @@ h2 {
     font-size: 1rem;
 }
 
-.temple-gallery {
+section, .temple-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    column-gap: 80px;
-    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    column-gap: 70px;
+    row-gap: 10px;
 }
 
 figure {
@@ -122,14 +122,14 @@ figure {
 }
 
 figure img {
-    width: 420px;
+    width: 400px;
     height: 300px;
     object-fit: cover;
     object-position: center;
 }
 
 figcaption {
-    background-color: black;
+    background-color: rgb(53, 3, 101);
     color: white;
     font-style: italic;
     padding: 4px;
