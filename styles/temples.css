@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+header, body, 
+footer {
+    margin: 0 auto;
+    border: 1px solid black;
+    max-width: 1320px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/*off-screen menu*/
+.off-screen-menu {
+    background-color:  rgb(34, 37, 49);
+    height: 450px;
+    width: 100%;
+    max-width: 200px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    /* background-color: rgb(34, 37, 49);*/
+}
+
+/*Ham Menu*/
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #6F86FF;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span {
+    background-color: white;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*Temple pictures*/
+main {
+    max-width: 1220px;
+    margin: 10px;
+    padding: 2px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 80px;
+    row-gap: 20px;
+}
+
+figure {
+    border: 1px solid #cccccc;
+    padding: 4px;
+    margin: auto;
+}
+
+figure img {
+    width: 420px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 4px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(53, 3, 101);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* CSS for mobile view */
+@media screen and (max-width: 640px) {
+    nav {
+        display: none; /* Hide the normal navigation bar */
+    }
+
+    .ham-menu {
+        display: block; /* Display the hamburger menu */
+    }
+}
