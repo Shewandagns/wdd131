@@ -74,7 +74,7 @@ h1 {
 }
 
 #ham-menu.open::before {
-    content: "❎";
+    content: "❌";
 }
 
 .open a {

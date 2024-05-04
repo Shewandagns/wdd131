@@ -18,16 +18,12 @@
         max-width: 800px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     
     .wrap {
         flex-wrap: wrap;
     }
-
-    .navigation a {
-		display: block;
-	}
     
     .navigation a {
         display: block;
