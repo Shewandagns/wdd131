@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Shewandagn Woyesa | Ethiopia</title>
+
+    <meta name="author" content="Shewandagn Woyesa">
+    <meta name="description" content="WDD 131- Country Page">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place_small-device.css">
+    <link rel="stylesheet" href="styles/place_large-device.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>Ethiopia</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/Ibexs.webp" media="(min-width: 724px)">
+                <img src="images/Walya.webp" alt="Ethiopia" width="360" height="200">
+            </picture>
+            <section id="data-section">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <th>Area:</th>
+                        <td>1,127,127 sq km</td>
+                    </tr>
+
+                    <tr>
+                        <th>Population:</th>
+                        <td>129,213,718</td>
+                    </tr>
+
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Addis Ababa</td>
+                    </tr>
+
+                    <tr>
+                        <th>Language:</th>
+                        <td>Amharic, Oromiffa, Tigrigna and more</td>
+                    </tr>
+
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Birr</td>
+                    </tr>
+
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>UTC/GMT +3</td>
+                    </tr>
+
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+251</td>
+                    </tr>
+
+                    <tr>
+                        <th>Internet TLD:</th>
+                        <td>.et</td>
+                    </tr>                
+                </table>
+            </section>
+            <section id="weather-section">
+                <h2 id="weather-title">Weather</h2>
+                <img id="weather-icon" src="images/weather-icon.svg" alt="Weather Icon">
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td><span id="temperature">23</span> <span id="temperature-unit">°C</span></td>
+                    </tr>
+
+                    <tr>
+                        <th>Condition:</th>
+                        <td>Mostly Cloudy</td>
+                    </tr>
+
+                    <tr>
+                        <th>Wind:</th>
+                        <td><span id="wind">12</span> <span id="wind-unit">mph</span></td>
+                    </tr>
+
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td id="wind-chill"></td> <!--I did google search to get wind chill however i wasn't able to get any result-->
+                    </tr>  
+                </table>
+            </section> 
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ⛈️ Shewandagn Woyesa ⛈️ Ethiopia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
