@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #xxxxx;
+    --secondary-color: #xxxxxx;
+    --accent1-color: #xxxxxx;
+    --accent2-color: #xxxxxx;
+
+    --heading-font: '______', serif;
+    --paragraph-font: '______', serif;
+
+    --nav-background-color: #xxxxxx;
+    --nav-link-color: #xxxxxx;
+    --nav-hover-link-color: #xxxxxx;
+    --nav-hover-background-color: #xxxxxx;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+}
+
+.hero h2 {
+    color: black;
+}
+
+p {
+    color: black;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('abisinya-tour.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
