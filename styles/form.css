@@ -79,7 +79,7 @@ fieldset{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    caret-color: rgb(0 0 0 0);
+    caret-color: black;
 }
 
 .star-ratings > label:hover{
