@@ -9,14 +9,18 @@
     <meta name="author" content="Shewandagn S. Woyesa">
 
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/smalldevices.css">
+
     <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/humburgermenu.js" deferv></script>
 </head>
 <body>
     <header class="aboutHeader">
         <img src="images/OIP.jpg" alt="Abisinya Tour and Travel Agency" class="logo">
         
         <nav class="aboutNavbar">
-            <ul>
+            <button id="ham-menu" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="trip.html">Tour Package</a></li>
@@ -31,7 +35,7 @@
             <h1>Discover the Beauty of Ethiopia</h2>
             <div class="hero-content">
                 <p>Explore our handpicked tours to experience the wonders of Ethiopia's wildlife, culture, and landscapes.</p>
-                <a href="services.html" class="btn">Explore Tours</a>
+                <a href="trip.html" class="btn">Explore Tours</a>
             </div>
         </section>
 
@@ -56,7 +60,7 @@
 
         <section class="about-us">
             <div class="about">
-                <img src="images/image02.jpg" class="side-image">
+                <img src="images/tiresiga.jpg" class="side-image">
                 <div class="text">
                     <h2>About Us</h2>
                     <h5>Abisinya Tour and Travel Agency</h5>

@@ -1,0 +1,65 @@
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    /*Header*/
+    .aboutHeader {
+        flex-direction: column;
+    }
+    
+    .aboutNavbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .aboutNavbar .nav-links.open {
+        display: flex;
+    }
+    
+    #ham-menu {
+        display: block;
+    }
+
+    /*Hero section*/
+    .about img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about h2 {
+        font-size: 25px;
+    }
+
+    .about h5 {
+        font-size: 15px;
+    }
+
+    .about p {
+        font-size: 10px;
+    }
+
+    /*About Page*/
+    .hero article img {
+        display: none;
+    }
+
+    .hero article {
+        font-size: 5px;
+    }
+    .historyContent img {
+        display: none;
+    }
+
+    /*Contact page*/
+    .contactContent {
+        width: 550px;
+    }
+
+    .contactContent img {
+        width: 200px;
+        height: auto;
+    }
+
+    .maps {
+        display: none;
+    }
+}

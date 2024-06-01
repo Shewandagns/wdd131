@@ -9,21 +9,25 @@
     <meta name="author" content="Shewandagn S. Woyesa">
 
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/smalldevices.css">
+
     <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/humburgermenu.js" deferv></script>
 </head>
 <body>
     <header class="aboutHeader">
         <img src="images/OIP.jpg" alt="Abisinya Tour and Travel Agency" class="logo">
         
-        <!--<h1>Welcome to East Africa Tours</h1>-->
         <nav class="aboutNavbar">
-            <ul>
+            <button id="ham-menu" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="trip.html">Tour Package</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+        </nav>
         </nav>
     </header>
     <main>
@@ -67,6 +71,7 @@
                     <p>b) Email us: <a href="mailto:contact@abisinyatour.com">contact@abisinyatour.com</a></p>
                     <br>
                     <p>c) Visit Us in person:  Bole wereda 06, Addis Ababa, Ethiopia</p>
+                    
                     <div class="maps">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d135710.0470264797!2d38.69351740680963!3d8.993423855696342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2set!4v1717237206107!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>

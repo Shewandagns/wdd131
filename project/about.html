@@ -9,14 +9,18 @@
     <meta name="author" content="Shewandagn S. Woyesa">
 
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/smalldevices.css">
+
     <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/humburgermenu.js" deferv></script>
 </head>
 <body>
     <header class="aboutHeader">
         <img src="images/OIP.jpg" alt="Abisinya Tour and Travel Agency" class="logo">
         
         <nav class="aboutNavbar">
-            <ul>
+            <button id="ham-menu" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="trip.html">Tour Package</a></li>
@@ -34,10 +38,7 @@
                 <p>
                     Welcome to Abisinya Tour and travels, your premier travel partner for exploring the wonders of Ethiopia.
                     Establshed in 2024, our mission is to offer unforgettable experience that immerse you in the rich culture, stunning landscapes, and historical treasures of Ethiopia.
-                    <br>
-                    At Ethiopia Tours, we are passionate about showcasing the unique beauty of our country. 
-                    From the majestic Simien Mountains to the ancient rock-hewn churches of Lalibela, we provide expertly crafted tour packages that cater to adventurers, history buffs, and cultural enthusiasts alike. 
-                    Our team of experienced guides and travel experts are dedicated to ensuring your journey is both enriching and seamless.
+                    
                 </p>
             </article>
         </div>

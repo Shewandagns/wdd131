@@ -1,16 +1,16 @@
 :root {
-    --primary-color: #xxxxx;
-    --secondary-color: #xxxxxx;
-    --accent1-color: #xxxxxx;
-    --accent2-color: #xxxxxx;
+    --primary-color: #0000FF;
+    --secondary-color: #808080;
+    --accent1-color: #fff;
+    --accent2-color: #000;
 
     --heading-font: 'Roboto', serif;
     --paragraph-font: 'Arial', serif;
 
     --nav-background-color: #ddd;
-    --nav-link-color: #xxxxxx;
-    --nav-hover-link-color: #xxxxxx;
-    --nav-hover-background-color: #xxxxxx;
+    --nav-link-color: #264a5e;
+    --nav-hover-link-color: #160b88;
+    --nav-hover-background-color: var(--accent1-color);
 }
 
 /*Apply font color to all fonts*/
@@ -35,7 +35,7 @@ html, body {
     padding: 10px;
     gap: 20px;
     border: 1px solid black;
-    color: #fff;
+    color: var(--accent1-color);
     margin-bottom: 1px;
 }
 
@@ -49,20 +49,27 @@ html, body {
 
 .aboutNavbar {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: 100%;
     height: auto;
     border-radius: 20px;
     padding: 0px;
     margin: 0;
     background-color: var(--nav-background-color);
-    /*border: 1px solid gray;*/
+}
+
+.aboutNavbar .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .aboutNavbar a {
     text-decoration: none;
-    color: #264a5e;
+    color: var(--nav-link-color);
     padding: 15px 25px;
     margin: 0;
     border-radius: 1px solid black;
@@ -74,7 +81,21 @@ html, body {
 
 .aboutNavbar a:hover {
     background-color: var(--accent1-color);
-    color: #160b88;
+    color: var(--nav-hover-link-color);
+}
+
+#ham-menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--nav-link-color);
+    display: none;
+    top: 1rem;
+    right: 1rem;
+}
+
+#ham-menu.open {
+    display: block;
 }
 
 main {
@@ -83,7 +104,7 @@ main {
 }
 
 header h1 {
-    color: white;
+    color: var(--accent1-color);
 }
 
 .hero h2 {
@@ -93,6 +114,7 @@ header h1 {
 p {
     color: black;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -105,7 +127,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--accent1-color);
     text-decoration: none;
 }
 
@@ -183,7 +205,7 @@ section {
 .btn {
     display: inline-block;
     background-color: #007bff;
-    color: #fff;
+    color: var(--accent1-color);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 15px;
@@ -232,7 +254,7 @@ section {
     width: 100%;
     height: 250px;
     padding: 20px 0;
-    background-color: #ddd;
+    background-color: var(--nav-background-color);
     border: 1px solid black;
 }
 
@@ -312,7 +334,7 @@ section {
 }
 
 .hero article p {
-    color: black;
+    color: var(--accent2-color);
     font-family: 'Newsreader', serif;
     padding: 15px 15px 15px 15px;
     text-align: justify;
@@ -351,7 +373,7 @@ section h2 {
 .historyContent p {
     text-align: justify;
     padding: 10px;
-    color: #000;
+    color: var(--accent2-color);
 }
 
 .historyContent img {
@@ -394,6 +416,7 @@ section h2 {
     margin: 10px;
     height: 550px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .trip-card img {
@@ -438,7 +461,7 @@ section h2 {
     display: block;
     text-align: center;
     background-color: #0353a8;
-    color: #fff;
+    color: var(--accent1-color);
     text-decoration: none;
     padding: 5px;
     border-radius: 10px;
@@ -454,7 +477,7 @@ section h2 {
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: #fff;
+    color: var(--accent1-color);
     padding: 100px 20px;
 }
 
@@ -496,7 +519,7 @@ section h2 {
 .gallery-item p {
     padding: 10px;
     background-color: #333;
-    color: #fff;
+    color: var(--accent1-color);
     margin: 0;
 }
 
@@ -603,10 +626,9 @@ select {
     background-color: #3498db;
 }
 
-
 .contactContentbutton, .newsletterbutton {
-    background-color: #000080;
-    color: #fff;
+    background-color: #4444ef;
+    color: var(--accent1-color);
     padding: 14px 22px;
     border: none;
     border-radius: 8px;
@@ -617,6 +639,11 @@ select {
 
 .newsletterbutton {
     background-color: var(--accent2-color) !important;
+}
+
+.btn-subscribe:hover {
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
 }
 
 /*FOOTER SECTION*/
